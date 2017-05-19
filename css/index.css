@@ -1,0 +1,27 @@
+.w1200{width: 1200px; margin: 0 auto;}
+/**/
+.toplink{height: 50px; font-size: 18px; line-height: 50px;}
+
+/**/
+.banner{background-color: #25a7f6; padding: 60px 0; margin-bottom: 40px; color: #fff;}
+.banner h1{font-size: 48px; font-weight: 100; margin-bottom: 10px;}
+.banner p{font-size: 24px; margin-right: 380px; color: #fff;}
+
+.container{}
+.left{width: 870px; height: 500px;}
+.left .docs-section{}
+.left .docs-section > h1{padding-bottom: 9px; margin: 0 0 20px; font-weight: 100; border-bottom: 1px solid #eee;}
+.left .docs-section > p{line-height: 30px;}
+
+.right{width: 300px;}
+.right ul li{line-height: 36px;}
+.right ul li a{padding:4px 20px; border-left: #fff solid 1px;}
+.right ul li a:hover{border-left: #25a7f6 solid 1px; text-decoration: none; color: #25a7f6;}
+
+.right ul li ul.nav{display: none;}
+.right ul li ul.nav li{font-size: 12px; line-height: 24px;height: 24px; overflow: hidden; text-overflow: ellipsis;}
+.right ul li ul.nav li a{padding-left: 40px;}
+
+/**/
+.footer{background-color: #2a2730; margin-top: 100px; height: 180px;}
+.footer .text{color: #fff; line-height: 180px;}
