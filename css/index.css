@@ -1,6 +1,6 @@
 .w1200{width: 1200px; margin: 0 auto;}
 /**/
-.toplink{height: 50px; font-size: 18px; line-height: 50px;}
+.toplink{height: 50px; font-size: 18px; line-height: 50px; font-size: 11px;}
 
 /**/
 .banner{background-color: #25a7f6; padding: 60px 0; margin-bottom: 40px; color: #fff;}
@@ -23,5 +23,6 @@
 .right ul li ul.nav li a{padding-left: 40px;}
 
 /**/
-.footer{background-color: #2a2730; margin-top: 100px; height: 180px;}
-.footer .text{color: #fff; line-height: 180px;}
+.footer{background-color: #2a2730; margin-top: 100px; height: 80px; text-align: center;}
+.footer .text{color: #fff; line-height: 80px;}
+.footer .text a{padding:0 20px; border-right: #666 solid 1px;}
