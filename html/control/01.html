@@ -1,0 +1,16 @@
+          <h1>控件：弹出层</h1>
+          <div class="control">
+			<input class="btn btn-default" value="居中弹出" type="submit">
+
+		  <div class="clear"></div>
+<script src="js/layer.js"></script>
+<script>
+$('.btn').click(function () {
+	layer.open({
+		type: 1,
+		area: ['600px', '360px'],
+		shadeClose: true, //点击遮罩关闭
+		content: '\<\div style="padding:20px;">自定义内容\<\/div>'
+	});
+});
+</script>

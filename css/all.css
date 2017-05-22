@@ -5,6 +5,7 @@
 #col-3{background-color: #333c48;}
 #col-4{background-color: #acb0b4;}
 #col-5{background-color: #d5dce6;}
+.color:hover{cursor: pointer;}
 
 /*----font----*/
 .font{margin: 15px 0; height: 30px; line-height: 30px;}
@@ -21,6 +22,20 @@
 /*----ico----*/
 .ico li{float: left; margin-right: 20px;}
 .mt40{margin-top: 40px;}
+
+/*----page----*/
+.page{position: absolute; right: 0; top: 200px;}
+.page ul li{float: left; margin-right: 10px; width: 40px; height: 40px; line-height: 40px; background-color: #fff; border: #ccc solid 1px; text-align: center;}
+.page ul li:hover,.page ul li.page-right{background-color: #25a7f6; border-color: #25a7f6; color: #fff; cursor: pointer;}
+
+.page ul li.page-left{width: 100px;}
+.page ul li.page-right{width: 100px;}
+/*.page ul li.page-left:hover{cursor: text; background-color: #fff; border-color: #ccc; color: #666;}*/
+.page ul li.page-right:hover{background-color: #1690db; border-color: #1690db;}
+.page ul li.more{border: none;}
+.page ul li.more:hover{background-color: #fff; color: #666; cursor: text;}
+.page ul li#page-on{border-color: #25a7f6; color: #25a7f6;}
+.page ul li#page-on:hover{background-color: #fff; cursor: default;}
 
 
 /*----system----*/
@@ -51,7 +66,6 @@
 	padding: 0 15px;
 	font-size: 14px;
 	text-align: center;
-	/*border-radius: 3px;*/
 	cursor: pointer;
 	transition-property: all;
 	transition-duration: .2s;

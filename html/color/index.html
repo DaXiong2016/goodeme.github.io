@@ -1,48 +1,24 @@
           <h1>颜色</h1>
-          <div class="color" id="col-1">#25a7f6</div>
-		  <div class="color" id="col-2">#ff8100</div>
-		  <div class="color" id="col-3">#333c48</div>
-		  <div class="color" id="col-4">#acb0b4</div>
-		  <div class="color" id="col-5">#d5dce6</div>
+          <div class="color" id="col-1" data-clipboard-action="copy" data-clipboard-target="#col-1">#25a7f6</div>
+		  <div class="color" id="col-2" data-clipboard-action="copy" data-clipboard-target="#col-2">#ff8100</div>
+		  <div class="color" id="col-3" data-clipboard-action="copy" data-clipboard-target="#col-3">#333c48</div>
+		  <div class="color" id="col-4" data-clipboard-action="copy" data-clipboard-target="#col-4">#acb0b4</div>
+		  <div class="color" id="col-5" data-clipboard-action="copy" data-clipboard-target="#col-5">#d5dce6</div>
 		  <div class="clear"></div>
 		  <p>点击色块可复制颜色值</p>
+<script src="js/clipboard.min.js"></script>
 <script>
-function copyToClipboard(txt) {
-            if (window.clipboardData) {
-                window.clipboardData.clearData();
-                clipboardData.setData("Text", txt);
-                alert("复制成功！");
-
-            } else if (navigator.userAgent.indexOf("Opera") != -1) {
-                window.location = txt;
-            } else if (window.netscape) {
-                try {
-                    netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
-                } catch (e) {
-                    alert("被浏览器拒绝！\n请在浏览器地址栏输入'about:config'并回车\n然后将 'signed.applets.codebase_principal_support'设置为'true'");
-                }
-                var clip = Components.classes['@mozilla.org/widget/clipboard;1'].createInstance(Components.interfaces.nsIClipboard);
-                if (!clip)
-                    return;
-                var trans = Components.classes['@mozilla.org/widget/transferable;1'].createInstance(Components.interfaces.nsITransferable);
-                if (!trans)
-                    return;
-                trans.addDataFlavor("text/unicode");
-                var str = new Object();
-                var len = new Object();
-                var str = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
-                var copytext = txt;
-                str.data = copytext;
-                trans.setTransferData("text/unicode", str, copytext.length * 2);
-                var clipid = Components.interfaces.nsIClipboard;
-                if (!clip)
-                    return false;
-                clip.setData(trans, null, clipid.kGlobalClipboard);
-                alert("复制成功！");
-            }
-        }
-
-$('.color').click(function(){
-	copyToClipboard($(this).text());
+var clipboard = new Clipboard('.color');
+clipboard.on('success', function(e) {
+  console.info('Action:', e.action);
+  console.info('Text:', e.text);
+  console.info('Trigger:', e.trigger);
+alert('已复制色值：' + e.text);
+  e.clearSelection();
+});
+ 
+clipboard.on('error', function(e) {
+  console.error('Action:', e.action);
+  console.error('Trigger:', e.trigger);
 });
 </script>
