@@ -10,7 +10,7 @@ $('.right li a').click(function(){
   $(this).parent().find('.nav').attr('style','display:block');
 
   //加载时
-  $('.docs-section').html('<div class="box"><img src="js/skin/default/loading-2.gif" /></div>');
+  $('.docs-section').html('<div class="box" style="border:none;"><img src="js/skin/default/loading-2.gif" /></div>');
 
   //加载html
   var html = $(this).attr('data-src');
