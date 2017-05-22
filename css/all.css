@@ -6,6 +6,21 @@
 #col-4{background-color: #acb0b4;}
 #col-5{background-color: #d5dce6;}
 
+/*----font----*/
+.font{margin: 15px 0; height: 30px; line-height: 30px;}
+.font li{float: left; margin-right: 20px;}
+.font li.f-num{width: 32px; font-size: 14px; color: #999;}
+.font li.title{width: 580px;}
+.f-h1{font-size: 24px;}
+.f-h2{font-size: 22px;}
+.f-h3{font-size: 18px;}
+.f-h4{font-size: 16px;}
+.f-h5{font-size: 14px;}
+.f-h6{font-size: 12px;}
+
+/*----ico----*/
+.ico li{float: left; margin-right: 20px;}
+.mt40{margin-top: 40px;}
 
 
 /*----system----*/
